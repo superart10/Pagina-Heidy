@@ -47,8 +47,11 @@ body {
     list-style: none;
     padding: 5px;
     font:bold 14px verdana;
-    display: inline-block;
-    
+    display: inline-block;   
+}
+
+.principal{
+    text-decoration: underline;
 }
 
 .seccion{
@@ -107,4 +110,11 @@ img{
     margin: 5px auto;
 }
 
-    
+a {
+    text-decoration: none;
+    color:black;
+    font-style: normal;
+}
+
+
+
