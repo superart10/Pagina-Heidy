@@ -1,0 +1,43 @@
+*{
+    margin: 0px 0px;
+}
+
+.cabezera{
+    border: 1px solid black;
+    
+    width: 100%;
+    
+}
+
+.cabeza{
+    display: inline-block;
+}
+
+#t1{
+    border: 1px solid black;
+}
+
+#menubox{
+    border: 1px solid black ;
+    width: 30%;
+    margin: 5px 50px;
+}
+
+.menu li{
+    display: inline-block;
+    border: 1px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#logo{
+    width: 10%;
+    height: 10%;
+}
+
+.flecha{
+    box-sizing: 5px 5px;
+}
+
+
+
