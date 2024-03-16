@@ -17,7 +17,7 @@
 
 
 #t1{
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 300%;
     
@@ -49,6 +49,10 @@
     text-decoration: none;
 }
 
+.menu li a:hover{
+    color: #F7EED9;
+}
+
 .hiddenmenu{
     position: absolute;
     background-color: #F16464;
@@ -78,6 +82,10 @@
     width: 50%;
     margin-top: 5%;
     
+}
+
+.subtitulo{
+    color: #86837C;
 }
 
 
