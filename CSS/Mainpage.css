@@ -1,7 +1,7 @@
 *{
     margin: 0px 0px;
 }
-
+/*  menu inicial */
 .cabezera{
     border: 1px solid black;
     align-items: center;
@@ -17,7 +17,7 @@
 
 
 #t1{
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 300%;
     
@@ -49,6 +49,10 @@
     text-decoration: none;
 }
 
+.menu li a:hover{
+    color: #F7EED9;
+}
+
 .hiddenmenu{
     position: absolute;
     background-color: #F16464;
@@ -71,13 +75,112 @@
     height: 5%;
 }
 
+.resnav{
+    color: black;
+    background: none;
+    border: none;
+    line-height: 60px;
+    padding: 0px 20px;
+    font-size: 30px;
+
+    display: none;
+}
+
+.resnav:active{
+    color: #F7EED9;
+}
+
+@media (max-width: 800px) {
+    .cabezera{
+        border: 1px solid black;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        background-color: #F16464;
+        
+    }
+    
+    .cabeza{
+        display: inline-block;
+    }
+    
+    
+    #t1{
+        /*border: 1px solid black;*/
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 300%;
+        
+    }
+    
+    #menubox{
+       /* border: 1px solid black ;*/
+        width: 30%;
+        margin: 5px 50px;
+    }
+    
+    .menu li{
+        
+       /* border: 1px solid black;*/
+        margin-left: 10px;
+        margin-right: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        list-style: none;
+        text-decoration: none;
+        font-style: normal;
+    }
+    
+    .lista1 > li{
+        display: inline-block;
+    }
+    
+    .menu li a{
+        color: black;
+        text-decoration: none;
+    }
+    
+    .menu li a:hover{
+        color: #F7EED9;
+    }
+    
+    .hiddenmenu{
+        position: absolute;
+        background-color: #F16464;
+        visibility: hidden;  
+        opacity: 0;  
+        transition: opacity 1.5s;
+        padding-inline-start: 0%;
+    
+    }
+    
+    .menu li:hover .hiddenmenu{
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    
+    
+    #logo{
+        width: 5%;
+        height: 5%;
+    }
+}
+
+/*  menu inicial  */
 .content{
     text-align: justify;
     font-family: "Work Sans", sans-serif;
     margin-left: 10%;
-    width: 50%;
+    width: 50%;  
     margin-top: 5%;
+
+    display: flex;
+    flex-wrap:wrap ;
+    min-width: 300px;
     
+}
+
+.subtitulo{
+    color: #86837C;
 }
 
 
