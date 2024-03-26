@@ -23,10 +23,11 @@
     
 }
 
+
 #menubox{
    /* border: 1px solid black ;*/
     width: 30%;
-    margin: 5px 50px;
+    margin: 5px 0px;
 }
 
 .menu li{
@@ -90,18 +91,15 @@
     color: #F7EED9;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .cabezera{
         border: 1px solid black;
         align-items: center;
         text-align: center;
         width: 100%;
         background-color: #F16464;
+        height: 10%;
         
-    }
-    
-    .cabeza{
-        display: inline-block;
     }
     
     
@@ -112,57 +110,54 @@
         
     }
     
-    #menubox{
-       /* border: 1px solid black ;*/
-        width: 30%;
-        margin: 5px 50px;
-    }
     
-    .menu li{
+    
+    .lista1{
+        flex-direction: column;
+        position: fixed;
         
-       /* border: 1px solid black;*/
-        margin-left: 10px;
-        margin-right: 10px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: #F16464;
+        left: 0;
+        width: 100%;
         list-style: none;
-        text-decoration: none;
-        font-style: normal;
+        height: 100%;
+        padding: 50px 0px;
+
+        left: 100%;
+        transition: left 0.3s;
     }
+
+    .resnav{
+        display: block;
+    }
+
+    .menu_visible{
+        left: 0;
+    }
+
+    .lista1 li{
+        font-size: 50px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: block;
+    }
+
     
-    .lista1 > li{
-        display: inline-block;
-    }
-    
-    .menu li a{
-        color: black;
-        text-decoration: none;
-    }
-    
-    .menu li a:hover{
-        color: #F7EED9;
-    }
     
     .hiddenmenu{
-        position: absolute;
-        background-color: #F16464;
-        visibility: hidden;  
-        opacity: 0;  
-        transition: opacity 1.5s;
-        padding-inline-start: 0%;
-    
-    }
-    
-    .menu li:hover .hiddenmenu{
+        left: 100px;
         visibility: visible;
+        padding-inline-start: 5px;
+        position: relative;
         opacity: 1;
+        padding-bottom: 50px;
     }
-    
-    
     
     #logo{
         width: 5%;
         height: 5%;
     }
+
+    
 }
 
 /*  menu inicial  */
@@ -176,11 +171,32 @@
     display: flex;
     flex-wrap:wrap ;
     min-width: 300px;
+    flex-direction: column;
     
+}
+
+@media (max-width: 1000px){
+    .content{
+        text-align: justify;
+        font-family: "Work Sans", sans-serif;
+        margin-left: 10%;
+        width: 80%;  
+        margin-top: 5%;
+    
+        display: flex;
+        flex-wrap:wrap ;
+        min-width: 300px;
+        
+    }
 }
 
 .subtitulo{
     color: #86837C;
+}
+
+a{
+    color: black;
+    text-decoration: none;
 }
 
 
