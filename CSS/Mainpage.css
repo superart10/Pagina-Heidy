@@ -125,6 +125,7 @@
 
         left: 100%;
         transition: left 0.3s;
+        overflow-y: auto;
     }
 
     .resnav{
@@ -198,6 +199,15 @@ a{
     color: black;
     text-decoration: none;
 }
+
+.link{
+    color:#86837C ;
+    font-weight: bold;
+}
+
+
+
+
 
 
 
