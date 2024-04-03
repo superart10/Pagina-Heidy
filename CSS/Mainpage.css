@@ -174,7 +174,19 @@
     flex-wrap:wrap ;
     min-width: 300px;
     flex-direction: column;
+
     
+    
+}
+
+.lateral{
+    border: 1px solid black;
+    font-family: "Work Sans", sans-serif;
+    width: 20%;
+    margin: 5% 10%;
+    position: absolute;
+    right: 0;
+    top: 12%;
 }
 
 @media (max-width: 1000px){
@@ -183,17 +195,33 @@
         font-family: "Work Sans", sans-serif;
         margin-left: 10%;
         width: 80%;  
-        margin-top: 5%;
+       /* margin-top: 5%;*/
     
         display: flex;
         flex-wrap:wrap ;
         min-width: 300px;
         
     }
+
+    .lateral{
+        border: 1px solid black;
+        font-family: "Work Sans", sans-serif;
+        width: 80%;
+        margin: 5% 10%;
+        top: 3%;
+        z-index: -1;
+        /*max-height: 15%;*/
+    }
 }
 
 .subtitulo{
     color: #86837C;
+}
+
+
+
+.lateral section{
+    border-top: 2px solid black;
 }
 
 a{
