@@ -1,0 +1,18 @@
+.laptop1{
+    width: 30%;
+    height: 30%;
+    margin: 10px 5px;
+}
+
+.laptop2{
+    width: 70%;
+    height: 70%;
+    margin: 10px 5px ;
+    align-content: center;
+}
+
+@media (max-width: 1000px){
+    .content{
+        margin-top: 15%;
+    }
+}
